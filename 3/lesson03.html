@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //1.
+        let i=0
+        while (i < 101){ 
+            console.log(i++)
+        }
+        //3.
+        
+        function countBasketPrice(basket){
+            let sum = 0;
+            for (let i = 0; i < basket.length; i+=1)  {
+                sum = sum + (basket[i][1] * basket[i][2])
+            }
+        return sum
+        }
+        let basket = [['яблоко', 5, 1], ["груша", 7, 3]];
+        console.log(countBasketPrice(basket));
+
+        //4. 
+        for (let i = 0; i < 10; console.log(i++)){}
+        //5
+        let r = ''
+        for (let i = 0; i < 20; i++){
+            r = r + 'x'
+            console.log(r)
+        }
+    </script>
+</body>
+</html>
